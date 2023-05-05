@@ -9,13 +9,13 @@ function App() {
   >([]);
   const [notificationCount, setNotificationCount] = useState(0);
   const getNotifications = async () => {
-    const response = await fetch("../data.json").then((response) =>
+    const response = await fetch("http://localhost:3000/data").then((response) =>
       response.json()
     );
 
     // set state
     setNotifications(response.notifications);
-    setNotificationCount(response.count);
+    setNotificationCount(response.counter.value);
   };
 
   useEffect(() => {

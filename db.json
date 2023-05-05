@@ -1,0 +1,72 @@
+{
+    "data": {
+      "counter": {
+        "value": 3
+      },  
+      "notifications": [
+        {
+          "avatar": "/avatar-mark-webber.webp",
+          "name": "Mark Webber",
+          "notification": "reacted to your recent post",
+          "action": "post",
+          "titlePost": "My first tournament today!",
+          "time": "1m ago",
+          "unread": true
+        },
+        {
+          "avatar": "/avatar-angela-gray.webp",
+          "name": "Angela Gray",
+          "notification": "followed you",
+          "action": "follow",
+          "time": "5m ago",
+          "unread": true
+        },
+        {
+          "avatar": "/avatar-jacob-thompson.webp",
+          "name": "Jacob Thompson",
+          "notification": "has joined your group",
+          "action": "group",
+          "groupName": "Chess Club",
+          "time": "1 day ago",
+          "unread": true
+        },
+        {
+          "avatar": "/avatar-rizky-hasanuddin.webp",
+          "name": "Rizky Hasanuddin",
+          "notification": "sent you a private message",
+          "action": "message",
+          "message": "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.",
+          "time": "5 days ago",
+          "unread": false
+        },
+        {
+          "avatar": "/avatar-kimberly-smith.webp",
+          "name": "Kimberly Smith",
+          "notification": " commented on your picture",
+          "action": "comment",
+          "picture": "/image-chess.webp",
+          "time": "1 week ago",
+          "unread": false
+        },
+        {
+          "avatar": "avatar-nathan-peterson.webp",
+          "name": "Nathan Peterson",
+          "notification": " reacted to your recent post",
+          "action": "post",
+          "titlePost": "5 end-game strategies to increase your win rate",
+          "time": "2 weeks ago",
+          "unread": false
+        },
+        {
+          "avatar": "avatar-anna-kim.webp",
+          "name": "Anna Kim",
+          "notification": " left the group",
+          "action": "group",
+          "groupName": "Chess Club",
+          "time": "2 weeks ago",
+          "unread": false
+        }
+      ]
+    }
+  }
+  
