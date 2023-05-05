@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+
+:root {
+  --white: #fff;
+  --red: hsl(1, 90%, 64%);
+  --blue: hsl(219, 85%, 26%);
+  --very-light-grayish-blue: hsl(210, 60%, 98%);
+  --light-grayish-blue-1: hsl(211, 68%, 94%);
+  --light-grayish-blue-2: hsl(205, 33%, 90%);
+  --grayish-blue: hsl(219, 14%, 63%);
+  --dark-grayish-blue: hsl(219, 12%, 42%);
+  --very-dark-blue: hsl(224, 21%, 14%);
+  --font: "Plus Jakarta Sans", sans-serif;
+}
+
+body {
+  background-color: var(--very-light-grayish-blue);
+  margin: 0;
+}
+
+@media (min-width: 1024px) {
+  body {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+  }
+}
+
+.App {
+  background-color: var(--white);
+  font-family: var(--font);
+  margin: 0 auto;
+  max-width: 730px;
+  padding: 24px 16px;
+}
+
+@media (min-width: 1024px) {
+  .App {
+    border-radius: 16px;
+    padding: 32px;
+  }
+}
+
+.notification {
+  color: var(dark-grayish-blue);
+  column-gap: 20px;
+  display: flex;
+  margin-bottom: 24px;
+  padding: 16px 20px;
+}
+
+.notification a {
+  color: var(--very-dark-blue);
+  text-decoration: none;
+}
+
+.notification a:hover {
+  color: var(--blue);
+}
+
+.notification-label {
+  font-size: 18px;
+  margin: 0;
+}
+
+.notification-count {
+  background-color: var(--blue);
+  border-radius: 4px;
+  color: var(--white);
+  font-size: 14px;
+  line-height: 1;
+  display: inline-block;
+  margin-left: 12px;
+  padding: 6px 12px;
+}
+
+.notification-unread {
+  background-color: var(--very-light-grayish-blue);
+  border-radius: 8px;
+  box-shadow: 0 15px 15px -25px var(--grayish-blue);
+}
+
+.notification-name {
+  cursor: pointer;
+}
+
+.notification-picture {
+  border-radius: 4px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.notification-picture:hover {
+  box-shadow: inset 0 0 0 3px var(--light-grayish-blue-1);
+}
+
+.notification-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.notification-handler {
+  appearance: none;
+  background-color: transparent;
+  border: 0;
+  color: var(--grayish-blue);
+  cursor: pointer;
+}
+
+.notification-handler:hover {
+  color: var(--blue);
+}
+
+.notification-avatar {
+  border-radius: 50%;
+  flex: none;
+}
+
+.notification-message {
+  border: 1px solid var(--grayish-blue);
+  border-radius: 8px;
+  cursor: pointer;
+  line-height: 24px;
+  padding: 16px;
+}
+
+.notification-message:hover {
+  background-color: var(--light-grayish-blue-1);
+  border-color: var(--light-grayish-blue-1);
+}
+
+.notification-action {
+  font-size: 14px;
+  margin: 0 0 4px;
+}
+
+@media (min-width: 1024px) {
+  .notification-action {
+    font-size: 16px;
+  }
+}
+
+.notification-action-unread:after {
+  background-color: var(--red);
+  border-radius: 50%;
+  content: "";
+  display: inline-block;
+  height: 8px;
+  margin: 0 6px;
+  vertical-align: middle;
+  width: 8px;
+}
+
+.notification-time {
+  color: var(--grayish-blue);
+  font-size: 14px;
+}
