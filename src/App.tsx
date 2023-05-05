@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { NotificationMessageProps } from "./types/Notification";
 import Header from "./components/Header";
 import NotificationMessage from "./components/Notification";
@@ -8,18 +8,23 @@ function App() {
     NotificationMessageProps[]
   >([]);
   const [notificationCount, setNotificationCount] = useState(0);
+  const fetchData = useRef(true);
   const getNotifications = async () => {
-    const response = await fetch("http://localhost:3000/data").then((response) =>
+    const response = await fetch("https://my-json-server.typicode.com/sariodesign/notifications-page/db").then((response) =>
       response.json()
     );
 
     // set state
-    setNotifications(response.notifications);
-    setNotificationCount(response.counter.value);
+    console.log('Response: ', response)
+    setNotifications(response.data.notifications);
+    setNotificationCount(response.data.counter.value);
   };
 
   useEffect(() => {
-    getNotifications();
+    if(fetchData.current){
+      fetchData.current = false 
+      getNotifications();
+    }
   }, []);
 
   const markReadHandler = () => {
@@ -34,6 +39,8 @@ function App() {
     setNotifications(markReadNotification);
     setNotificationCount(0);
   };
+
+  
 
   return (
     <div className="App">
