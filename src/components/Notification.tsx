@@ -2,7 +2,7 @@ import { NotificationMessageProps } from "../types/Notification";
 
 function NotificationMessage(props: NotificationMessageProps) {
   const TitlePost = ():JSX.Element => {
-    if (props.action !== "post" && !props.titlePost) return null;
+    if (props.action !== "post" && !props.titlePost) return <></>;
     return (
       <strong>
         <a href="#"> {props.titlePost}</a>
@@ -11,7 +11,7 @@ function NotificationMessage(props: NotificationMessageProps) {
   };
 
   const GroupName = ():JSX.Element => {
-    if (props.action !== "group" && !props.groupName) return null;
+    if (props.action !== "group" && !props.groupName) return <></>;
     return (
       <strong>
         {" "}
@@ -21,7 +21,7 @@ function NotificationMessage(props: NotificationMessageProps) {
   };
 
   const PictureCommented = ():JSX.Element => {
-    if (props.action !== "comment" && !props.picture) return null;
+    if (props.action !== "comment" && !props.picture) return <></>;
     return (
       <img
         className="notification-picture"
