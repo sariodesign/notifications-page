@@ -42,7 +42,7 @@ I used useState and useEffect react hook for load and change state of notificati
 
 ## Author
 
-- Website - [SarioDesign](https://www.sariodesign.it)
+- Website - [SarioDesign](https://www.sariodesign.dev)
 - Frontend Mentor - [@sariodesign](https://www.frontendmentor.io/profile/sariodesign)
 - Twitter - [@sariodesign](https://www.twitter.com/sariodesign)
 - Linkedin - [@sariodesign](https://www.linkedin.com/in/sariodesign/)
